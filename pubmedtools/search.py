@@ -82,9 +82,9 @@ def biopython_search(term, email='', api_key=None, batch_size=1000,
     
     if count > 10000:
         raise Exception(f"This search has {count} results. "
-                        "The pubmed_search_entrez function does not support "
-                        "more than 10000 results. "
-                        "Use pubmed_search_edirect.")
+                        "The biopython_search function does not support "
+                        "more than 10,000 results. "
+                        "Use the pubmedtools.search.edirect_search function.")
     
     r=[]
 
