@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Pubmed Tools (pubmedtools) package provides functions for searching and
+PubmedTools (pubmedtools) package provides functions for searching and
 retrieving articles from the PubMed database using Biopython and NCBI Entrez
 Direct. This is not an official NCBI library and has no direct affiliation
 with the organization.
