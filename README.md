@@ -1,5 +1,5 @@
-# Pubmed Tools (pubmedtools)
-Pubmed Tools (pubmedtools) package provides functions for searching and
+# PubmedTools (pubmedtools)
+PubmedTools (pubmedtools) package provides functions for searching and
 retrieving articles from the PubMed database using Biopython and NCBI Entrez
 Direct. This is not an official NCBI library and has no direct affiliation
 with the organization.
@@ -11,18 +11,13 @@ with the organization.
 - `aminocode.pubmed_search_biopython`: Searches the PubMed database using a
                                        given term.
 - `aminocode.pubmed_search_edirect`: Searches the PubMed database using the
-                                     Entrez
-                                           Direct tool.
+                                     Entrez Direct tool.
 - `aminocode.prepare_edirect_folder`: Prepares the Entrez Direct folder for use
                                       with the pubmed_search_edirect function.
 
-## Word Embedding Tools (biotext.wordembtools)
-- `wordembtools.WordEmbedding`: A class for generating word embeddings from a
-                                        collection of texts.
-
 ---
 # Installation
-You can install Pubmed Tools using pip:
+You can install PubmedTools using pip:
 
     pip install pubmedtools
 
