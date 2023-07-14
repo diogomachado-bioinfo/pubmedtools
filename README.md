@@ -66,7 +66,7 @@ Exception
     In this case, the user should use the `pubmedtools.search.edirect_search`
     function.
 
-### pubmedtools.search.edirect_search
+### `pubmedtools.search.edirect_search`
 Searches the PubMed database using a given term and retrieves the abstract,
 title, publication date, authors, MeSH terms, and other terms related to each
 article. This function use the official NCBI Entrez Direct tool.
@@ -95,10 +95,10 @@ Subsystem for Linux).
     - If the operating system is not recognized.
 
 ---
-## prepenv
+## `prepenv`
 
 ---
-### pubmedtools.prepenv.edirect_folder
+### `pubmedtools.prepenv.edirect_folder`
 Function to prepare the edirect folder for pubmed_search_edirect. Checks in
 pubmedtools package path if the edirect folder exists and contains the
 necessary files. If not, it downloads and extracts the required files.
