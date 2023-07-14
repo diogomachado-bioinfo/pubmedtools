@@ -8,7 +8,8 @@
 
 name: Upload Python Package
 
-on: push
+# on: push
+on: workflow_dispatch
 
 jobs:
   build-n-publish:
