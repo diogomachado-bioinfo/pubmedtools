@@ -29,7 +29,7 @@ You can install PubmedTools using pip:
 ---
 # Functions
 
-## search
+## `search`
 
 ---
 ### `pubmedtools.search.biopython_search`
