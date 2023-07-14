@@ -5,6 +5,8 @@ Direct. This is not an official NCBI library and has no direct affiliation
 with the organization.
 
 ---
+
+---
 # Features
 
 ## PubMed Tools (biotext.pubmedtoos)
@@ -16,10 +18,14 @@ with the organization.
                                       with the pubmed_search_edirect function.
 
 ---
+
+---
 # Installation
 You can install PubmedTools using pip:
 
     pip install pubmedtools
+
+---
 
 ---
 # Functions
@@ -27,7 +33,7 @@ You can install PubmedTools using pip:
 ## pubmedtools
 
 ---
-### pubmedtools.pubmed_search_biopython
+### `pubmedtools.pubmed_search_biopython`
 Searches the PubMed database using a given term and retrieves the abstract,
 title, publication date, authors, MeSH terms, and other terms related to each
 article. This function use the Bio.Entrez package from Biopython. The search is
@@ -35,15 +41,15 @@ limited to 10,000 results.
 
 **Parameters**
 
-- term : str
+- `term` : str
     - The search term to be used in the query.
-- email : str, optional
+- `email` : str, optional
     - Email address to be used in case the Entrez server needs to contact you.
-- api_key : str, optional
+- `api_key` : str, optional
     - API key to access the Entrez server.
-- batch_size : int, optional
+- `batch_size` : int, optional
     - Number of articles to be downloaded per iteration. Default is 1000.
-- verbose : bool, optional
+- `verbose` : bool, optional
     - Whether to print progress messages. Default is True.
 
 **Returns**
@@ -67,9 +73,9 @@ article. This function use the official NCBI Entrez Direct tool.
 
 **Parameters**
 
-- query : str
+- `query` : str
     - The query to be searched in PubMed.
-- api_key : str, optional
+- `api_key` : str, optional
     - The NCBI API key. If not provided, the search will be performed without
     the API key.
 
