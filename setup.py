@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name='biotext',
+setup(name='pubmedtools',
       version='0.0.0.0',
       author='Diogo de J. S. Machado',
       author_email='diogomachado.bioinfo@gmail.com',
