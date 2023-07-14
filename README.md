@@ -9,13 +9,12 @@ with the organization.
 ---
 # Features
 
-## PubMed Tools (biotext.pubmedtoos)
-- `aminocode.pubmed_search_biopython`: Searches the PubMed database using a
-                                       given term.
-- `aminocode.pubmed_search_edirect`: Searches the PubMed database using the
-                                     Entrez Direct tool.
-- `aminocode.prepare_edirect_folder`: Prepares the Entrez Direct folder for use
-                                      with the pubmed_search_edirect function.
+- `pubmedtoos.search.biopython_search`: Searches the PubMed database using a
+                                               Biopython Entrez module (Bio.Entrez).
+- `pubmedtoos.search.edirect_search`: Searches the PubMed database using the
+                                             official Entrez Direct tool.
+- `pubmedtoos.prepenv.edirect_folder`: Prepares the Entrez Direct folder for use
+                                       with the edirect_search function.
 
 ---
 
@@ -30,13 +29,13 @@ You can install PubmedTools using pip:
 ---
 # Functions
 
-## pubmedtools
+## search
 
 ---
-### `pubmedtools.pubmed_search_biopython`
+### `pubmedtools.search.biopython_search`
 Searches the PubMed database using a given term and retrieves the abstract,
 title, publication date, authors, MeSH terms, and other terms related to each
-article. This function use the Bio.Entrez package from Biopython. The search is
+article. This function use the Bio.Entrez module from Biopython. The search is
 limited to 10,000 results.
 
 **Parameters**
@@ -64,9 +63,10 @@ limited to 10,000 results.
 Exception
     - If the search returns more than 10,000 results, which is the limit of
     this function.
-    In this case, the user should use the `pubmed_search_edirect` function.
+    In this case, the user should use the `pubmedtools.search.edirect_search`
+    function.
 
-### pubmedtools.pubmed_search_edirect
+### pubmedtools.search.edirect_search
 Searches the PubMed database using a given term and retrieves the abstract,
 title, publication date, authors, MeSH terms, and other terms related to each
 article. This function use the official NCBI Entrez Direct tool.
@@ -94,8 +94,11 @@ Subsystem for Linux).
 - Exception
     - If the operating system is not recognized.
 
-### pubmedtools.prepare_edirect_folder
-Function to prepare the edirect folder for pubmed_search_edirect.
+---
+## prepenv
 
-Checks if the edirect folder exists and contains the necessary files.
-If not, it downloads and extracts the required files into the edirect folder.
+---
+### pubmedtools.prepenv.edirect_folder
+Function to prepare the edirect folder for pubmed_search_edirect. Checks in
+pubmedtools package path if the edirect folder exists and contains the
+necessary files. If not, it downloads and extracts the required files.
