@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='pubmedtools',
-      version='0.0.0.0',
+      version='0.0.0.1',
       author='Diogo de J. S. Machado',
       author_email='diogomachado.bioinfo@gmail.com',
       description=('Pubmed Tools (pubmedtools) package provides functions for'
