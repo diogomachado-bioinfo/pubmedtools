@@ -7,7 +7,7 @@ setup(name='pubmedtools',
       description=('Pubmed Tools (pubmedtools) package provides functions for'
                    'searching and retrieving articles from the PubMed database'
                    'using Biopython and NCBI Entrez Direct.'),
-      packages=find_packages(exclude=['tests']),
+      packages=find_packages(),
       long_description_content_type='text/markdown',
       long_description=open('README.md').read(),
       zip_safe=False,
